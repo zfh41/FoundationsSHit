@@ -164,14 +164,6 @@ if __name__ == "__main__":
     
     m = TuringMachine('110111010', [6])
 
-    # The following statements define the TM transitions.
-    # m.addTransition(0,')',1,'X','L')
-    # means in state 0, looking at ')' on the tape, the TM
-    # enters state 1, writes 'X' over the ')' and moves the
-    # read/write head Left.
-    
-#    What I think is right
-
     m.addTransition(0,'1',0,'1','R')
     m.addTransition(0,'0',1,'X','L')
     m.addTransition(0,'X',0,'X','R')
@@ -192,17 +184,6 @@ if __name__ == "__main__":
     m.addTransition(4,'_',0,'_','R')
     m.addTransition(5,'X',5,'X','L')
     m.addTransition(5,'_',6,'_','R')
-    
-    
-
-#    m.addTransition(0,'(',0,'(','R')
-#    m.addTransition(0,')',1,'X','L')
-#    m.addTransition(0,'X',0,'X','R')
-#    m.addTransition(0,'_',2,'_','L')
-#    m.addTransition(2,'X',2,'X','L')
-#    m.addTransition(2,'_',3,'_','R')
-#    m.addTransition(1,'X',1,'X','L')
-#    m.addTransition(1,'(',0,'X','R')
     
 
     # run the TM
