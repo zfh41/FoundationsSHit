@@ -1,13 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 18 14:28:31 2019
-
-@author: rutkowsk
-"""
-
 #!/usr/bin/env python
-
-# (C) 2003 Ryan Phillips
 
 import sys
 
